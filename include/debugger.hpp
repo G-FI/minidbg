@@ -46,6 +46,13 @@ namespace minidbg {
         auto read_memory(uint64_t address) -> uint64_t ;
         void write_memory(uint64_t address, uint64_t value);
 
+        void single_step_instruction();
+        void single_step_with_breakpoint_check();
+        void step_in();
+        void step_out();
+        auto get_offset_pc()->uint64_t;
+        void remove_breakpoint(uint64_t addr);
+        
         std::string m_prog_name;
         pid_t m_pid;
         uint64_t m_load_address = 0;

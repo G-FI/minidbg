@@ -20,9 +20,59 @@
 
 using namespace minidbg;
 
+//source step
+void debugger::single_step_instruction(){
+    ptrace(PTRACE_SINGLESTEP, m_pid, nullptr, nullptr);
+    wait_for_signal();
+}
+
+void debugger::single_step_with_breakpoint_check(){
+    if(m_breakpoints.find(get_pc()) == m_breakpoints.end()){
+        single_step_instruction();
+    }else{
+        step_over_breakpoint();
+    }
+}
+
+void debugger::step_out(){
+    auto frame_pointer = get_register_value(m_pid, reg::rbp);
+    auto ra = read_memory(frame_pointer + 8);
+    
+    bool is_remove = false;
+    if(m_breakpoints.find(ra) == m_breakpoints.end()){
+        set_breakpoint_at_address(ra);
+        is_remove = true;
+    }
+
+    continue_execution();
+
+    if(is_remove){
+        remove_breakpoint(ra);
+    }
+}
+
+void debugger::remove_breakpoint(uint64_t addr){
+    if(m_breakpoints[addr].is_enabled()){
+        m_breakpoints[addr].disable();
+    }
+    m_breakpoints.erase(addr);
+}
+
+void debugger::step_in(){
+    auto cur_line = get_line_entry_from_pc(get_offset_pc())->line;
+  
+    while(get_line_entry_from_pc(get_offset_pc())->line == cur_line){
+        single_step_with_breakpoint_check();
+    }
+    auto line_entry = get_line_entry_from_pc(get_offset_pc());
+
+    print_source(line_entry->file->path, line_entry->line);
+}
+
+
 void debugger::initialise_load_address() {
    //If this is a dynamic library (e.g. PIE)
-   if (m_elf.get_hdr().type == elf::et::dyn) {
+    if (m_elf.get_hdr().type == elf::et::dyn) {
       //The load address is found in /proc/<pid>/maps
       std::ifstream map("/proc/" + std::to_string(m_pid) + "/maps");
 
@@ -30,8 +80,12 @@ void debugger::initialise_load_address() {
       std::string addr;
       std::getline(map, addr, '-');
 
-      m_load_address = std::stoi(addr, 0, 16);
+      m_load_address = std::stol(addr, 0, 16);
    }
+}
+
+uint64_t debugger::get_offset_pc(){
+    return offset_load_address(get_offset_pc());
 }
 
 uint64_t debugger::offset_load_address(uint64_t addr) {
@@ -244,6 +298,15 @@ void debugger::handle_command(const std::string& line) {
             write_memory(std::stol(addr, 0, 16), std::stol(val, 0, 16));
         }
     }
+    else if(is_prefix(command, "step")){
+        step_in();
+    }else if(is_prefix(command, "next")){
+        
+    }else if(is_prefix(command, "stepi")){
+        single_step_with_breakpoint_check();
+    }else if(is_prefix(command, "finish")){
+        step_out();
+    }
     else {
         std::cerr << "Unknown command\n";
     }
@@ -258,7 +321,8 @@ void debugger::set_breakpoint_at_address(std::intptr_t addr) {
 
 void debugger::run() {
     wait_for_signal();
-    initialise_load_address();
+    initialise_load_address();  
+    std::cout<<"load_address: 0x"<<std::hex<<m_load_address<<std::endl;
 
     char* line = nullptr;
     while((line = linenoise("minidbg> ")) != nullptr) {
