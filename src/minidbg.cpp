@@ -20,6 +20,68 @@
 
 using namespace minidbg;
 
+//variablesd
+class ptrace_expr_context : public dwarf::expr_context{
+public:
+    ptrace_expr_context(pid_t pid, uint64_t load_address) 
+        :m_pid(pid), m_load_address(load_address){}
+    dwarf::taddr reg(unsigned regnum) override{
+        return get_register_value_from_dwarf_register(m_pid, regnum);
+    }
+
+    dwarf::taddr deref_size(dwarf::taddr address, unsigned size) override{
+        return ptrace(PTRACE_PEEKDATA, m_pid, address + m_load_address, nullptr);
+    }
+
+    dwarf::taddr pc() override{
+        struct user_regs_struct regs;
+        ptrace(PTRACE_GETREGS, m_pid, nullptr, &regs);
+        return regs.rip - m_load_address;
+    }
+
+private:
+    pid_t m_pid;
+    uint64_t m_load_address;
+};
+
+void debugger::read_variables(){
+    using namespace dwarf;
+
+    auto func = get_function_from_pc(get_offset_pc());
+    for(const auto & die : func){
+        //tag is variable
+        if(die.tag == DW_TAG::variable){
+            //get location attribute
+            auto loc_val = die[DW_AT::location];
+            //TODO what is exprloc?
+            if(loc_val.get_type() == value::type::exprloc){
+                ptrace_expr_context context{m_pid, m_load_address};
+                auto result = loc_val.as_exprloc().evaluate(&context);
+
+                switch(result.location_type){
+                case expr_result::type::address:
+                {
+                    auto offset_addr = result.value;
+                    auto value = read_memory(offset_addr);
+                    std::cout<<at_name(die)<<" at (0x"<<std::hex<<offset_addr<<") = "
+                        <<value<<std::endl;
+                    break;
+
+                }
+                case expr_result::type::reg:
+                {
+                    auto value = get_register_value_from_dwarf_register(m_pid, result.value);
+                    std::cout<<at_name(die)<<" in reg"<<result.value<<" = "<<value<<std::endl;
+                    break;
+                }
+                default:
+                    throw std::runtime_error{"unhandled variable location"};
+                }
+            }
+        }
+    }
+}
+
 //statck unwinding
 void debugger::stack_backtrace(){
     auto output_frame = [frame_num = 0, this](auto && func/*func_die*/) mutable{
@@ -28,7 +90,7 @@ void debugger::stack_backtrace(){
             <<" in "<<at_name(func)<<"()"<<std::endl;
     //TODO add source information
     };   
-    
+
     auto cur_func = get_function_from_pc(get_offset_pc());
     output_frame(cur_func);
 
@@ -37,7 +99,7 @@ void debugger::stack_backtrace(){
     // std::cout<<"frame_pointer: "<<std::hex<<frame_pointer<<std::endl;
     // std::cout<<"ra = "<<std::hex<<ra<<std::endl;
 
-    while(at_name(cur_func)){
+    while(at_name(cur_func) != "main"){
         cur_func =  get_function_from_pc(offset_load_address(ra));
         output_frame(cur_func);
         frame_pointer = read_memory(frame_pointer);
@@ -463,6 +525,9 @@ void debugger::handle_command(const std::string& line) {
     }
     else if(is_prefix(command, "backtrace")){
         stack_backtrace();
+    }
+    else if(is_prefix(command, "variables")){
+        read_variables();
     }
     else {
         std::cerr << "Unknown command\n";

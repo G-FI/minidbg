@@ -98,6 +98,9 @@ namespace minidbg {
 
         //stack unwinding
         void stack_backtrace();
+        
+        //variables
+        void read_variables();
 
         std::string m_prog_name;
         pid_t m_pid;
