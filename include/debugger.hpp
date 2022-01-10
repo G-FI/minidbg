@@ -96,6 +96,8 @@ namespace minidbg {
         void set_breakpoint_at_source_line(const std::string& file, unsigned line);
         std::vector<symbol> lookup_symtbl(const std::string &name);
 
+        //stack unwinding
+        void stack_backtrace();
 
         std::string m_prog_name;
         pid_t m_pid;

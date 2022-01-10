@@ -20,6 +20,33 @@
 
 using namespace minidbg;
 
+//statck unwinding
+void debugger::stack_backtrace(){
+    auto output_frame = [frame_num = 0, this](auto && func/*func_die*/) mutable{
+        std::cout<<"frame #"<<frame_num++<<" "<<std::hex<<"0x"
+            <<offset_dwarf_address(at_low_pc(func))
+            <<" in "<<at_name(func)<<"()"<<std::endl;
+    //TODO add source information
+    };   
+    
+    auto cur_func = get_function_from_pc(get_offset_pc());
+    output_frame(cur_func);
+
+    auto frame_pointer = get_register_value(m_pid, reg::rbp);
+    auto ra = read_memory(frame_pointer + 8);
+    // std::cout<<"frame_pointer: "<<std::hex<<frame_pointer<<std::endl;
+    // std::cout<<"ra = "<<std::hex<<ra<<std::endl;
+
+    while(at_name(cur_func)){
+        cur_func =  get_function_from_pc(offset_load_address(ra));
+        output_frame(cur_func);
+        frame_pointer = read_memory(frame_pointer);
+        ra = read_memory(frame_pointer+8);
+        // std::cout<<"frame_pointer: "<<std::hex<<frame_pointer<<std::endl;
+        // std::cout<<"ra = "<<std::hex<<ra<<std::endl;
+    }
+
+}
 
 //look up symtbl
 std::vector<debugger::symbol> debugger::lookup_symtbl(const std::string &name){
