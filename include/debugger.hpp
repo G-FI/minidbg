@@ -12,6 +12,44 @@
 
 namespace minidbg {
     class debugger {
+    enum class symbol_type{
+            notype,
+            object,
+            func,
+            section,
+            file,
+    };
+
+    std::string to_string(symbol_type st){
+        switch(st){
+        case symbol_type::notype : return "notype";
+        case symbol_type::object : return "ogject";
+        case symbol_type::func : return "func";
+        case symbol_type::section : return "section";
+        case symbol_type::file : return "file";
+        default : return "notype";
+        }
+    }
+
+    //entrys in symtal have a data member, which cantains all information of a symtbl entry
+    //and one of is stt it's 
+    symbol_type to_symbol_type(elf::stt sym){
+        switch(sym){
+        case elf::stt::notype : return symbol_type::notype;
+        case elf::stt::object : return symbol_type::object;
+        case elf::stt::func : return symbol_type::func;
+        case elf::stt::section : return symbol_type::section;
+        case elf::stt::file : return symbol_type::file;
+        default: return symbol_type::notype;
+        }
+    }
+
+    struct symbol{
+        symbol_type type;
+        std::string name;
+        std::uintptr_t addr;
+    };
+
     public:
         debugger (std::string prog_name, pid_t pid)
              : m_prog_name{std::move(prog_name)}, m_pid{pid} {
@@ -50,9 +88,15 @@ namespace minidbg {
         void single_step_with_breakpoint_check();
         void step_in();
         void step_out();
+        void step_over();
         auto get_offset_pc()->uint64_t;
-        void remove_breakpoint(uint64_t addr);
-        
+        void remove_breakpoint(std::intptr_t addr);
+        auto offset_dwarf_address(uint64_t addr)->uint64_t;//abs address
+        void set_breakpoint_at_function(std::string name);
+        void set_breakpoint_at_source_line(const std::string& file, unsigned line);
+        std::vector<symbol> lookup_symtbl(const std::string &name);
+
+
         std::string m_prog_name;
         pid_t m_pid;
         uint64_t m_load_address = 0;
