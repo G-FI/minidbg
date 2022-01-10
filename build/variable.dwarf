@@ -1,0 +1,1118 @@
+
+.debug_info
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              GNU C++14 9.3.0 -mtune=generic -march=x86-64 -gdwarf-2 -O0 -std=c++14 -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+                    DW_AT_language              DW_LANG_C_plus_plus
+                    DW_AT_name                  /home/hpy/minidbg/examples/variable.cpp
+                    DW_AT_comp_dir              /home/hpy/minidbg/build
+                    DW_AT_low_pc                0x00001149
+                    DW_AT_high_pc               0x0000118f
+                    DW_AT_stmt_list             0x00000000
+
+LOCAL_SYMBOLS:
+< 1><0x0000002d>    DW_TAG_namespace
+                      DW_AT_name                  std
+                      DW_AT_decl_file             0x0000000c /home/hpy/minidbg/build/<built-in>
+                      DW_AT_decl_line             0x00000000
+                      DW_AT_sibling               <0x00000124>
+< 2><0x00000038>      DW_TAG_namespace
+                        DW_AT_name                  __cxx11
+                        DW_AT_decl_file             0x00000003 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h
+                        DW_AT_decl_line             0x00000114
+                        DW_AT_decl_column           0x00000041
+                        DW_AT_export_symbols        yes(1)
+< 2><0x00000042>      DW_TAG_imported_module
+                        DW_AT_decl_file             0x00000003 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h
+                        DW_AT_decl_line             0x00000114
+                        DW_AT_decl_column           0x00000041
+                        DW_AT_import                <0x00000038>
+< 2><0x0000004b>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000062
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000424>
+< 2><0x00000053>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000063
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000493>
+< 2><0x0000005b>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000065
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000517>
+< 2><0x00000063>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000066
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x0000052c>
+< 2><0x0000006b>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000067
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000544>
+< 2><0x00000073>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000068
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x0000055d>
+< 2><0x0000007b>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000069
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000576>
+< 2><0x00000083>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x0000006a
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x0000058e>
+< 2><0x0000008b>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x0000006b
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x000005a7>
+< 2><0x00000093>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x0000006c
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x000005cb>
+< 2><0x0000009b>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x0000006d
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x000005ee>
+< 2><0x000000a3>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000071
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x0000060b>
+< 2><0x000000ab>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000072
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000633>
+< 2><0x000000b3>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000074
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000655>
+< 2><0x000000bb>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000075
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000678>
+< 2><0x000000c3>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000076
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x0000069c>
+< 2><0x000000cb>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000078
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x000006b5>
+< 2><0x000000d3>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000079
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x000006ce>
+< 2><0x000000db>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x0000007e
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x000006dd>
+< 2><0x000000e3>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000083
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x000006f2>
+< 2><0x000000eb>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000084
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x0000070a>
+< 2><0x000000f3>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000085
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000727>
+< 2><0x000000fb>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000087
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x0000073c>
+< 2><0x00000103>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x00000088
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x00000756>
+< 2><0x0000010b>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x0000008b
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x0000077e>
+< 2><0x00000113>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x0000008d
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x0000078c>
+< 2><0x0000011b>      DW_TAG_imported_declaration
+                        DW_AT_decl_file             0x00000002 /usr/include/c++/9/cstdio
+                        DW_AT_decl_line             0x0000008f
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_import                <0x000007a4>
+< 1><0x00000124>    DW_TAG_namespace
+                      DW_AT_name                  __gnu_cxx
+                      DW_AT_decl_file             0x00000003 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h
+                      DW_AT_decl_line             0x00000116
+                      DW_AT_decl_column           0x0000000b
+                      DW_AT_sibling               <0x00000145>
+< 2><0x00000131>      DW_TAG_namespace
+                        DW_AT_name                  __cxx11
+                        DW_AT_decl_file             0x00000003 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h
+                        DW_AT_decl_line             0x00000118
+                        DW_AT_decl_column           0x00000041
+                        DW_AT_export_symbols        yes(1)
+< 2><0x0000013b>      DW_TAG_imported_module
+                        DW_AT_decl_file             0x00000003 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h
+                        DW_AT_decl_line             0x00000118
+                        DW_AT_decl_column           0x00000041
+                        DW_AT_import                <0x00000131>
+< 1><0x00000145>    DW_TAG_typedef
+                      DW_AT_name                  size_t
+                      DW_AT_decl_file             0x00000004 /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h
+                      DW_AT_decl_line             0x000000d1
+                      DW_AT_decl_column           0x00000017
+                      DW_AT_type                  <0x00000151>
+< 1><0x00000151>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  long unsigned int
+< 1><0x00000158>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  unsigned int
+< 1><0x0000015f>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+< 1><0x00000161>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_unsigned_char
+                      DW_AT_name                  unsigned char
+< 1><0x00000168>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_unsigned
+                      DW_AT_name                  short unsigned int
+< 1><0x0000016f>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  signed char
+< 1><0x00000176>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000002
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  short int
+< 1><0x0000017d>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000004
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  int
+< 1><0x00000184>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_encoding              DW_ATE_signed
+                      DW_AT_name                  long int
+< 1><0x0000018b>    DW_TAG_typedef
+                      DW_AT_name                  __off_t
+                      DW_AT_decl_file             0x00000005 /usr/include/x86_64-linux-gnu/bits/types.h
+                      DW_AT_decl_line             0x00000098
+                      DW_AT_decl_column           0x00000019
+                      DW_AT_type                  <0x00000184>
+< 1><0x00000197>    DW_TAG_typedef
+                      DW_AT_name                  __off64_t
+                      DW_AT_decl_file             0x00000005 /usr/include/x86_64-linux-gnu/bits/types.h
+                      DW_AT_decl_line             0x00000099
+                      DW_AT_decl_column           0x0000001b
+                      DW_AT_type                  <0x00000184>
+< 1><0x000001a3>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000001a9>
+< 1><0x000001a9>    DW_TAG_base_type
+                      DW_AT_byte_size             0x00000001
+                      DW_AT_encoding              DW_ATE_signed_char
+                      DW_AT_name                  char
+< 1><0x000001b0>    DW_TAG_const_type
+                      DW_AT_type                  <0x000001a9>
+< 1><0x000001b5>    DW_TAG_structure_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_decl_file             0x00000006 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+                      DW_AT_decl_line             0x0000000e
+                      DW_AT_decl_column           0x00000001
+                      DW_AT_MIPS_linkage_name     11__mbstate_t
+                      DW_AT_sibling               <0x00000203>
+< 2><0x000001c2>      DW_TAG_union_type
+                        DW_AT_byte_size             0x00000004
+                        DW_AT_decl_file             0x00000006 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+                        DW_AT_decl_line             0x00000011
+                        DW_AT_decl_column           0x00000003
+                        DW_AT_sibling               <0x000001e4>
+< 3><0x000001cb>        DW_TAG_member
+                          DW_AT_name                  __wch
+                          DW_AT_decl_file             0x00000006 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+                          DW_AT_decl_line             0x00000012
+                          DW_AT_decl_column           0x00000013
+                          DW_AT_type                  <0x00000158>
+< 3><0x000001d7>        DW_TAG_member
+                          DW_AT_name                  __wchb
+                          DW_AT_decl_file             0x00000006 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+                          DW_AT_decl_line             0x00000013
+                          DW_AT_decl_column           0x0000000a
+                          DW_AT_type                  <0x00000203>
+< 2><0x000001e4>      DW_TAG_member
+                        DW_AT_name                  __count
+                        DW_AT_decl_file             0x00000006 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+                        DW_AT_decl_line             0x0000000f
+                        DW_AT_decl_column           0x00000007
+                        DW_AT_type                  <0x0000017d>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 0
+< 2><0x000001f3>      DW_TAG_member
+                        DW_AT_name                  __value
+                        DW_AT_decl_file             0x00000006 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+                        DW_AT_decl_line             0x00000014
+                        DW_AT_decl_column           0x00000005
+                        DW_AT_type                  <0x000001c2>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 4
+< 1><0x00000203>    DW_TAG_array_type
+                      DW_AT_type                  <0x000001a9>
+                      DW_AT_sibling               <0x00000213>
+< 2><0x0000020c>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000151>
+                        DW_AT_upper_bound           3
+< 1><0x00000213>    DW_TAG_typedef
+                      DW_AT_name                  __mbstate_t
+                      DW_AT_decl_file             0x00000006 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+                      DW_AT_decl_line             0x00000015
+                      DW_AT_decl_column           0x00000003
+                      DW_AT_type                  <0x000001b5>
+< 1><0x0000021f>    DW_TAG_structure_type
+                      DW_AT_name                  _G_fpos_t
+                      DW_AT_byte_size             0x00000010
+                      DW_AT_decl_file             0x00000007 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+                      DW_AT_decl_line             0x0000000a
+                      DW_AT_decl_column           0x00000010
+                      DW_AT_sibling               <0x0000024b>
+< 2><0x0000022c>      DW_TAG_member
+                        DW_AT_name                  __pos
+                        DW_AT_decl_file             0x00000007 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+                        DW_AT_decl_line             0x0000000c
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_type                  <0x0000018b>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 0
+< 2><0x0000023b>      DW_TAG_member
+                        DW_AT_name                  __state
+                        DW_AT_decl_file             0x00000007 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+                        DW_AT_decl_line             0x0000000d
+                        DW_AT_decl_column           0x0000000f
+                        DW_AT_type                  <0x00000213>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 8
+< 1><0x0000024b>    DW_TAG_typedef
+                      DW_AT_name                  __fpos_t
+                      DW_AT_decl_file             0x00000007 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+                      DW_AT_decl_line             0x0000000e
+                      DW_AT_decl_column           0x00000003
+                      DW_AT_type                  <0x0000021f>
+< 1><0x00000257>    DW_TAG_structure_type
+                      DW_AT_name                  _IO_FILE
+                      DW_AT_byte_size             0x000000d8
+                      DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                      DW_AT_decl_line             0x00000031
+                      DW_AT_decl_column           0x00000008
+                      DW_AT_sibling               <0x00000424>
+< 2><0x00000264>      DW_TAG_member
+                        DW_AT_name                  _flags
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000033
+                        DW_AT_decl_column           0x00000007
+                        DW_AT_type                  <0x0000017d>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 0
+< 2><0x00000273>      DW_TAG_member
+                        DW_AT_name                  _IO_read_ptr
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000036
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 8
+< 2><0x00000282>      DW_TAG_member
+                        DW_AT_name                  _IO_read_end
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000037
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 16
+< 2><0x00000291>      DW_TAG_member
+                        DW_AT_name                  _IO_read_base
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000038
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 24
+< 2><0x000002a0>      DW_TAG_member
+                        DW_AT_name                  _IO_write_base
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000039
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 32
+< 2><0x000002af>      DW_TAG_member
+                        DW_AT_name                  _IO_write_ptr
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000003a
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 40
+< 2><0x000002be>      DW_TAG_member
+                        DW_AT_name                  _IO_write_end
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000003b
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 48
+< 2><0x000002cd>      DW_TAG_member
+                        DW_AT_name                  _IO_buf_base
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000003c
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 56
+< 2><0x000002dc>      DW_TAG_member
+                        DW_AT_name                  _IO_buf_end
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000003d
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 64
+< 2><0x000002eb>      DW_TAG_member
+                        DW_AT_name                  _IO_save_base
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000040
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 72
+< 2><0x000002fa>      DW_TAG_member
+                        DW_AT_name                  _IO_backup_base
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000041
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 80
+< 2><0x00000309>      DW_TAG_member
+                        DW_AT_name                  _IO_save_end
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000042
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x000001a3>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 88
+< 2><0x00000318>      DW_TAG_member
+                        DW_AT_name                  _markers
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000044
+                        DW_AT_decl_column           0x00000016
+                        DW_AT_type                  <0x0000043e>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 96
+< 2><0x00000327>      DW_TAG_member
+                        DW_AT_name                  _chain
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000046
+                        DW_AT_decl_column           0x00000014
+                        DW_AT_type                  <0x00000444>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 104
+< 2><0x00000336>      DW_TAG_member
+                        DW_AT_name                  _fileno
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000048
+                        DW_AT_decl_column           0x00000007
+                        DW_AT_type                  <0x0000017d>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 112
+< 2><0x00000345>      DW_TAG_member
+                        DW_AT_name                  _flags2
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000049
+                        DW_AT_decl_column           0x00000007
+                        DW_AT_type                  <0x0000017d>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 116
+< 2><0x00000354>      DW_TAG_member
+                        DW_AT_name                  _old_offset
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000004a
+                        DW_AT_decl_column           0x0000000b
+                        DW_AT_type                  <0x0000018b>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 120
+< 2><0x00000363>      DW_TAG_member
+                        DW_AT_name                  _cur_column
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000004d
+                        DW_AT_decl_column           0x00000012
+                        DW_AT_type                  <0x00000168>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 128
+< 2><0x00000373>      DW_TAG_member
+                        DW_AT_name                  _vtable_offset
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000004e
+                        DW_AT_decl_column           0x0000000f
+                        DW_AT_type                  <0x0000016f>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 130
+< 2><0x00000383>      DW_TAG_member
+                        DW_AT_name                  _shortbuf
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000004f
+                        DW_AT_decl_column           0x00000008
+                        DW_AT_type                  <0x0000044a>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 131
+< 2><0x00000393>      DW_TAG_member
+                        DW_AT_name                  _lock
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000051
+                        DW_AT_decl_column           0x0000000f
+                        DW_AT_type                  <0x0000045a>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 136
+< 2><0x000003a3>      DW_TAG_member
+                        DW_AT_name                  _offset
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000059
+                        DW_AT_decl_column           0x0000000d
+                        DW_AT_type                  <0x00000197>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 144
+< 2><0x000003b3>      DW_TAG_member
+                        DW_AT_name                  _codecvt
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000005b
+                        DW_AT_decl_column           0x00000017
+                        DW_AT_type                  <0x00000466>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 152
+< 2><0x000003c3>      DW_TAG_member
+                        DW_AT_name                  _wide_data
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000005c
+                        DW_AT_decl_column           0x00000019
+                        DW_AT_type                  <0x00000472>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 160
+< 2><0x000003d3>      DW_TAG_member
+                        DW_AT_name                  _freeres_list
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000005d
+                        DW_AT_decl_column           0x00000014
+                        DW_AT_type                  <0x00000444>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 168
+< 2><0x000003e3>      DW_TAG_member
+                        DW_AT_name                  _freeres_buf
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000005e
+                        DW_AT_decl_column           0x00000009
+                        DW_AT_type                  <0x0000015f>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 176
+< 2><0x000003f3>      DW_TAG_member
+                        DW_AT_name                  __pad5
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x0000005f
+                        DW_AT_decl_column           0x0000000a
+                        DW_AT_type                  <0x00000145>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 184
+< 2><0x00000403>      DW_TAG_member
+                        DW_AT_name                  _mode
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000060
+                        DW_AT_decl_column           0x00000007
+                        DW_AT_type                  <0x0000017d>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 192
+< 2><0x00000413>      DW_TAG_member
+                        DW_AT_name                  _unused2
+                        DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                        DW_AT_decl_line             0x00000062
+                        DW_AT_decl_column           0x00000008
+                        DW_AT_type                  <0x00000478>
+                        DW_AT_data_member_location  DW_OP_plus_uconst 196
+< 1><0x00000424>    DW_TAG_typedef
+                      DW_AT_name                  FILE
+                      DW_AT_decl_file             0x00000009 /usr/include/x86_64-linux-gnu/bits/types/FILE.h
+                      DW_AT_decl_line             0x00000007
+                      DW_AT_decl_column           0x00000019
+                      DW_AT_type                  <0x00000257>
+< 1><0x00000430>    DW_TAG_typedef
+                      DW_AT_name                  _IO_lock_t
+                      DW_AT_decl_file             0x00000008 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+                      DW_AT_decl_line             0x0000002b
+                      DW_AT_decl_column           0x0000000e
+< 1><0x00000438>    DW_TAG_structure_type
+                      DW_AT_name                  _IO_marker
+                      DW_AT_declaration           yes(1)
+< 1><0x0000043e>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000438>
+< 1><0x00000444>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000257>
+< 1><0x0000044a>    DW_TAG_array_type
+                      DW_AT_type                  <0x000001a9>
+                      DW_AT_sibling               <0x0000045a>
+< 2><0x00000453>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000151>
+                        DW_AT_upper_bound           0
+< 1><0x0000045a>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000430>
+< 1><0x00000460>    DW_TAG_structure_type
+                      DW_AT_name                  _IO_codecvt
+                      DW_AT_declaration           yes(1)
+< 1><0x00000466>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000460>
+< 1><0x0000046c>    DW_TAG_structure_type
+                      DW_AT_name                  _IO_wide_data
+                      DW_AT_declaration           yes(1)
+< 1><0x00000472>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x0000046c>
+< 1><0x00000478>    DW_TAG_array_type
+                      DW_AT_type                  <0x000001a9>
+                      DW_AT_sibling               <0x00000488>
+< 2><0x00000481>      DW_TAG_subrange_type
+                        DW_AT_type                  <0x00000151>
+                        DW_AT_upper_bound           19
+< 1><0x00000488>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x000001b0>
+< 1><0x0000048e>    DW_TAG_const_type
+                      DW_AT_type                  <0x00000488>
+< 1><0x00000493>    DW_TAG_typedef
+                      DW_AT_name                  fpos_t
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000054
+                      DW_AT_decl_column           0x00000012
+                      DW_AT_type                  <0x0000024b>
+< 1><0x0000049f>    DW_TAG_const_type
+                      DW_AT_type                  <0x00000493>
+< 1><0x000004a4>    DW_TAG_variable
+                      DW_AT_name                  stdin
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000089
+                      DW_AT_decl_column           0x0000000e
+                      DW_AT_type                  <0x000004b2>
+                      DW_AT_external              yes(1)
+                      DW_AT_declaration           yes(1)
+< 1><0x000004b2>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000424>
+< 1><0x000004b8>    DW_TAG_variable
+                      DW_AT_name                  stdout
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x0000008a
+                      DW_AT_decl_column           0x0000000e
+                      DW_AT_type                  <0x000004b2>
+                      DW_AT_external              yes(1)
+                      DW_AT_declaration           yes(1)
+< 1><0x000004c6>    DW_TAG_variable
+                      DW_AT_name                  stderr
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x0000008b
+                      DW_AT_decl_column           0x0000000e
+                      DW_AT_type                  <0x000004b2>
+                      DW_AT_external              yes(1)
+                      DW_AT_declaration           yes(1)
+< 1><0x000004d4>    DW_TAG_variable
+                      DW_AT_name                  sys_nerr
+                      DW_AT_decl_file             0x0000000b /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+                      DW_AT_decl_line             0x0000001a
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_external              yes(1)
+                      DW_AT_declaration           yes(1)
+< 1><0x000004e2>    DW_TAG_array_type
+                      DW_AT_type                  <0x0000048e>
+                      DW_AT_sibling               <0x000004ed>
+< 2><0x000004eb>      DW_TAG_subrange_type
+< 1><0x000004ed>    DW_TAG_variable
+                      DW_AT_name                  sys_errlist
+                      DW_AT_decl_file             0x0000000b /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+                      DW_AT_decl_line             0x0000001b
+                      DW_AT_decl_column           0x0000001a
+                      DW_AT_type                  <0x000004e2>
+                      DW_AT_external              yes(1)
+                      DW_AT_declaration           yes(1)
+< 1><0x000004fb>    DW_TAG_variable
+                      DW_AT_name                  _sys_nerr
+                      DW_AT_decl_file             0x0000000b /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+                      DW_AT_decl_line             0x0000001e
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_external              yes(1)
+                      DW_AT_declaration           yes(1)
+< 1><0x00000509>    DW_TAG_variable
+                      DW_AT_name                  _sys_errlist
+                      DW_AT_decl_file             0x0000000b /usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+                      DW_AT_decl_line             0x0000001f
+                      DW_AT_decl_column           0x0000001a
+                      DW_AT_type                  <0x000004e2>
+                      DW_AT_external              yes(1)
+                      DW_AT_declaration           yes(1)
+< 1><0x00000517>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  clearerr
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000002f5
+                      DW_AT_decl_column           0x0000000d
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x0000052c>
+< 2><0x00000526>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x0000052c>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  fclose
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000000d5
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x00000544>
+< 2><0x0000053e>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x00000544>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  feof
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000002f7
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x0000055d>
+< 2><0x00000557>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x0000055d>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  ferror
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000002f9
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x00000576>
+< 2><0x00000570>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x00000576>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  fflush
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000000da
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x0000058e>
+< 2><0x00000588>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x0000058e>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  fgetc
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000001e5
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x000005a7>
+< 2><0x000005a1>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x000005a7>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  fgetpos
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000002db
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x000005c5>
+< 2><0x000005ba>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 2><0x000005bf>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000005c5>
+< 1><0x000005c5>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x00000493>
+< 1><0x000005cb>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  fgets
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000234
+                      DW_AT_decl_column           0x0000000e
+                      DW_AT_type                  <0x000001a3>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x000005ee>
+< 2><0x000005de>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000001a3>
+< 2><0x000005e3>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x0000017d>
+< 2><0x000005e8>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x000005ee>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  fopen
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000000f6
+                      DW_AT_decl_column           0x0000000e
+                      DW_AT_type                  <0x000004b2>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x0000060b>
+< 2><0x00000600>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000488>
+< 2><0x00000605>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000488>
+< 1><0x0000060b>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  fread
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000286
+                      DW_AT_decl_column           0x0000000f
+                      DW_AT_type                  <0x00000145>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x00000633>
+< 2><0x0000061e>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x0000015f>
+< 2><0x00000623>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000145>
+< 2><0x00000628>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000145>
+< 2><0x0000062d>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x00000633>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  freopen
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000000fc
+                      DW_AT_decl_column           0x0000000e
+                      DW_AT_type                  <0x000004b2>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x00000655>
+< 2><0x00000645>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000488>
+< 2><0x0000064a>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000488>
+< 2><0x0000064f>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x00000655>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  fseek
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000002ac
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x00000678>
+< 2><0x00000668>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 2><0x0000066d>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000184>
+< 2><0x00000672>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x0000017d>
+< 1><0x00000678>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  fsetpos
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000002e0
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x00000696>
+< 2><0x0000068b>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 2><0x00000690>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000696>
+< 1><0x00000696>    DW_TAG_pointer_type
+                      DW_AT_byte_size             0x00000008
+                      DW_AT_type                  <0x0000049f>
+< 1><0x0000069c>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  ftell
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000002b1
+                      DW_AT_decl_column           0x00000011
+                      DW_AT_type                  <0x00000184>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x000006b5>
+< 2><0x000006af>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x000006b5>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  getc
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000001e6
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x000006ce>
+< 2><0x000006c8>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x000006ce>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  getchar
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000001ec
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+< 1><0x000006dd>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  perror
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000307
+                      DW_AT_decl_column           0x0000000d
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x000006f2>
+< 2><0x000006ec>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000488>
+< 1><0x000006f2>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  remove
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000092
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x0000070a>
+< 2><0x00000704>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000488>
+< 1><0x0000070a>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  rename
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000094
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x00000727>
+< 2><0x0000071c>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000488>
+< 2><0x00000721>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000488>
+< 1><0x00000727>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  rewind
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000002b6
+                      DW_AT_decl_column           0x0000000d
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x0000073c>
+< 2><0x00000736>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x0000073c>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  setbuf
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000130
+                      DW_AT_decl_column           0x0000000d
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x00000756>
+< 2><0x0000074b>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 2><0x00000750>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000001a3>
+< 1><0x00000756>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  setvbuf
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x00000134
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x0000077e>
+< 2><0x00000769>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 2><0x0000076e>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000001a3>
+< 2><0x00000773>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x0000017d>
+< 2><0x00000778>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x00000145>
+< 1><0x0000077e>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  tmpfile
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000000ad
+                      DW_AT_decl_column           0x0000000e
+                      DW_AT_type                  <0x000004b2>
+                      DW_AT_declaration           yes(1)
+< 1><0x0000078c>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  tmpnam
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x000000bb
+                      DW_AT_decl_column           0x0000000e
+                      DW_AT_type                  <0x000001a3>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x000007a4>
+< 2><0x0000079e>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000001a3>
+< 1><0x000007a4>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  ungetc
+                      DW_AT_decl_file             0x0000000a /usr/include/stdio.h
+                      DW_AT_decl_line             0x0000027f
+                      DW_AT_decl_column           0x0000000c
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_declaration           yes(1)
+                      DW_AT_sibling               <0x000007c2>
+< 2><0x000007b7>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x0000017d>
+< 2><0x000007bc>      DW_TAG_formal_parameter
+                        DW_AT_type                  <0x000004b2>
+< 1><0x000007c2>    DW_TAG_subprogram
+                      DW_AT_external              yes(1)
+                      DW_AT_name                  main
+                      DW_AT_decl_file             0x00000001 /home/hpy/minidbg/examples/variable.cpp
+                      DW_AT_decl_line             0x00000003
+                      DW_AT_decl_column           0x00000005
+                      DW_AT_type                  <0x0000017d>
+                      DW_AT_low_pc                0x00001149
+                      DW_AT_high_pc               0x0000118f
+                      DW_AT_frame_base            <loclist at offset 0x00000000 with 4 entries follows>
+			[ 0]< offset pair low-off : 0x00000000 addr  0x00001149 high-off  0x00000005 addr 0x0000114e>DW_OP_breg7+8
+			[ 1]< offset pair low-off : 0x00000005 addr  0x0000114e high-off  0x00000008 addr 0x00001151>DW_OP_breg7+16
+			[ 2]< offset pair low-off : 0x00000008 addr  0x00001151 high-off  0x00000045 addr 0x0000118e>DW_OP_breg6+16
+			[ 3]< offset pair low-off : 0x00000045 addr  0x0000118e high-off  0x00000046 addr 0x0000118f>DW_OP_breg7+8
+                      DW_AT_GNU_all_tail_call_sites yes(1)
+< 2><0x000007e4>      DW_TAG_variable
+                        DW_AT_name                  a
+                        DW_AT_decl_file             0x00000001 /home/hpy/minidbg/examples/variable.cpp
+                        DW_AT_decl_line             0x00000004
+                        DW_AT_decl_column           0x0000000a
+                        DW_AT_type                  <0x00000184>
+                        DW_AT_location              DW_OP_fbreg -40
+< 2><0x000007f1>      DW_TAG_variable
+                        DW_AT_name                  b
+                        DW_AT_decl_file             0x00000001 /home/hpy/minidbg/examples/variable.cpp
+                        DW_AT_decl_line             0x00000005
+                        DW_AT_decl_column           0x0000000a
+                        DW_AT_type                  <0x00000184>
+                        DW_AT_location              DW_OP_fbreg -32
+< 2><0x000007fe>      DW_TAG_variable
+                        DW_AT_name                  c
+                        DW_AT_decl_file             0x00000001 /home/hpy/minidbg/examples/variable.cpp
+                        DW_AT_decl_line             0x00000006
+                        DW_AT_decl_column           0x0000000a
+                        DW_AT_type                  <0x00000184>
+                        DW_AT_location              DW_OP_fbreg -24
+
+.debug_line: line number info for a single cu
+Source lines (from CU-DIE at .debug_info offset 0x0000000b):
+
+            NS new statement, BB new basic block, ET end of text sequence
+            PE prologue end, EB epilogue begin
+            IS=val ISA number, DI=val discriminator value
+<pc>        [lno,col] NS BB ET PE EB IS= DI= uri: "filepath"
+0x00001149  [   3,12] NS uri: "/home/hpy/minidbg/examples/variable.cpp"
+0x00001155  [   4,10] NS
+0x0000115d  [   5,10] NS
+0x00001165  [   6,10] NS
+0x00001174  [   7, 7] NS
+0x0000117c  [   8,11] NS
+0x00001188  [   9,12] NS
+0x0000118d  [  10, 1] NS
+0x0000118f  [  10, 1] NS ET
+
+.debug_str
+name at offset 0x00000000, length   11 is '_IO_buf_end'
+name at offset 0x0000000c, length    5 is 'fopen'
+name at offset 0x00000012, length   11 is '_old_offset'
+name at offset 0x0000001e, length    5 is '__wch'
+name at offset 0x00000024, length    7 is '__value'
+name at offset 0x0000002c, length   12 is '_IO_save_end'
+name at offset 0x00000039, length    9 is 'short int'
+name at offset 0x00000043, length    6 is 'size_t'
+name at offset 0x0000004a, length    5 is '__pos'
+name at offset 0x00000050, length   13 is '_IO_write_ptr'
+name at offset 0x0000005e, length    6 is '_flags'
+name at offset 0x00000065, length    5 is 'fgetc'
+name at offset 0x0000006b, length    7 is '__count'
+name at offset 0x00000073, length    7 is 'freopen'
+name at offset 0x0000007b, length    8 is '_markers'
+name at offset 0x00000084, length   12 is '_IO_read_end'
+name at offset 0x00000091, length   12 is '_freeres_buf'
+name at offset 0x0000009e, length    8 is '__fpos_t'
+name at offset 0x000000a7, length  164 is 'GNU C++14 9.3.0 -mtune=generic -march=x86-64 -gdwarf-2 -O0 -std=c++14 -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection'
+name at offset 0x0000014c, length    5 is 'fgets'
+name at offset 0x00000152, length    7 is 'fgetpos'
+name at offset 0x0000015a, length    7 is 'setvbuf'
+name at offset 0x00000162, length    6 is 'remove'
+name at offset 0x00000169, length   12 is '_sys_errlist'
+name at offset 0x00000176, length    6 is 'setbuf'
+name at offset 0x0000017d, length    5 is 'fseek'
+name at offset 0x00000183, length    6 is 'stderr'
+name at offset 0x0000018a, length    7 is 'getchar'
+name at offset 0x00000192, length    5 is '_lock'
+name at offset 0x00000198, length    8 is 'long int'
+name at offset 0x000001a1, length   11 is '_cur_column'
+name at offset 0x000001ad, length    6 is 'perror'
+name at offset 0x000001b4, length    9 is '_sys_nerr'
+name at offset 0x000001be, length    5 is 'ftell'
+name at offset 0x000001c4, length    4 is 'feof'
+name at offset 0x000001c9, length    6 is 'fflush'
+name at offset 0x000001d0, length    8 is '_IO_FILE'
+name at offset 0x000001d9, length   23 is '/home/hpy/minidbg/build'
+name at offset 0x000001f1, length    6 is 'fclose'
+name at offset 0x000001f8, length    8 is 'clearerr'
+name at offset 0x00000201, length   13 is 'unsigned char'
+name at offset 0x0000020f, length    9 is '__gnu_cxx'
+name at offset 0x00000219, length    6 is 'ferror'
+name at offset 0x00000220, length   10 is '_IO_marker'
+name at offset 0x0000022b, length    9 is '_shortbuf'
+name at offset 0x00000235, length   15 is '_IO_backup_base'
+name at offset 0x00000245, length   14 is '_IO_write_base'
+name at offset 0x00000254, length    8 is '_unused2'
+name at offset 0x0000025d, length   12 is '_IO_read_ptr'
+name at offset 0x0000026a, length   18 is 'short unsigned int'
+name at offset 0x0000027d, length    7 is '__cxx11'
+name at offset 0x00000285, length    4 is 'main'
+name at offset 0x0000028a, length   13 is '_freeres_list'
+name at offset 0x00000298, length    6 is '__pad5'
+name at offset 0x0000029f, length   39 is '/home/hpy/minidbg/examples/variable.cpp'
+name at offset 0x000002c7, length    7 is 'fsetpos'
+name at offset 0x000002cf, length   11 is '_IO_codecvt'
+name at offset 0x000002db, length   17 is 'long unsigned int'
+name at offset 0x000002ed, length   13 is '_IO_write_end'
+name at offset 0x000002fb, length    9 is '__off64_t'
+name at offset 0x00000305, length    7 is '__off_t'
+name at offset 0x0000030d, length    6 is '_chain'
+name at offset 0x00000314, length   13 is '_IO_wide_data'
+name at offset 0x00000322, length   13 is '11__mbstate_t'
+name at offset 0x00000330, length    9 is '_G_fpos_t'
+name at offset 0x0000033a, length    5 is 'stdin'
+name at offset 0x00000340, length    6 is 'rename'
+name at offset 0x00000347, length   12 is '_IO_buf_base'
+name at offset 0x00000354, length    7 is '_flags2'
+name at offset 0x0000035c, length    5 is '_mode'
+name at offset 0x00000362, length   13 is '_IO_read_base'
+name at offset 0x00000370, length    6 is 'tmpnam'
+name at offset 0x00000377, length   14 is '_vtable_offset'
+name at offset 0x00000386, length   13 is '_IO_save_base'
+name at offset 0x00000394, length    7 is '_fileno'
+name at offset 0x0000039c, length    6 is '__wchb'
+name at offset 0x000003a3, length    7 is '__state'
+name at offset 0x000003ab, length    6 is 'rewind'
+name at offset 0x000003b2, length    5 is 'fread'
+name at offset 0x000003b8, length    6 is 'ungetc'
+name at offset 0x000003bf, length    6 is 'stdout'
+name at offset 0x000003c6, length   10 is '_IO_lock_t'
+name at offset 0x000003d1, length    7 is 'tmpfile'
+
+.debug_aranges
+
+COMPILE_UNIT<header overall offset = 0x00000000>:
+< 0><0x0000000b>  DW_TAG_compile_unit
+                    DW_AT_producer              GNU C++14 9.3.0 -mtune=generic -march=x86-64 -gdwarf-2 -O0 -std=c++14 -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection
+                    DW_AT_language              DW_LANG_C_plus_plus
+                    DW_AT_name                  /home/hpy/minidbg/examples/variable.cpp
+                    DW_AT_comp_dir              /home/hpy/minidbg/build
+                    DW_AT_low_pc                0x00001149
+                    DW_AT_high_pc               0x0000118f
+                    DW_AT_stmt_list             0x00000000
+
+
+arange starts at 0x00001149, length of 0x00000046, cu_die_offset = 0x0000000b
+arange end
+
+.debug_frame
+

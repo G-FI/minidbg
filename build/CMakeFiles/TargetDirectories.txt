@@ -1,0 +1,7 @@
+/home/hpy/minidbg/build/CMakeFiles/rebuild_cache.dir
+/home/hpy/minidbg/build/CMakeFiles/edit_cache.dir
+/home/hpy/minidbg/build/CMakeFiles/libelfin.dir
+/home/hpy/minidbg/build/CMakeFiles/unwinding.dir
+/home/hpy/minidbg/build/CMakeFiles/hello.dir
+/home/hpy/minidbg/build/CMakeFiles/variable.dir
+/home/hpy/minidbg/build/CMakeFiles/minidbg.dir
